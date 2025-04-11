@@ -1,0 +1,28 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff8f0;
+    text-align: center;
+    padding: 20px;
+}
+
+.heart img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.message {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffeef0;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#messageState:checked ~ .message {
+    display: block;
+    opacity: 1;
+}
